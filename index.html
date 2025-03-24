@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Taste Tester</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-center mb-8 text-red-600">Pokemon Taste Tester</h1>
+        <div class="max-w-md mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+            <div id="pokemon-container" class="p-6">
+                <div class="flex justify-center mb-4">
+                    <img id="pokemon-image" src="" alt="Pokemon" class="h-48 w-48 object-contain">
+                </div>
+                <h2 id="pokemon-name" class="text-2xl font-bold text-center mb-2"></h2>
+                <div class="grid grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <h3 class="font-bold">Type:</h3>
+                        <p id="pokemon-type"></p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Weight:</h3>
+                        <p id="pokemon-weight"></p>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h3 class="font-bold">Culinary Assessment:</h3>
+                    <p id="taste-assessment" class="italic"></p>
+                </div>
+                <div class="mb-4">
+                    <h3 class="font-bold">Cooking Method:</h3>
+                    <p id="cooking-method"></p>
+                </div>
+                <button id="random-pokemon" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                    Get Random Pokemon
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
